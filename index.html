@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra từ đối xứng</title>
+</head>
+<body>
+<script>
+    let arr = prompt()
+    function nhapchuoi(arr){
+        for (let i =0; i<parseInt(arr.length/2); i++){
+            if (arr[i]===arr[arr.length-i-1]){
+                return true;
+            }
+        }return false;
+    }
+    alert(nhapchuoi(arr))
+</script>
+</body>
+</html>
